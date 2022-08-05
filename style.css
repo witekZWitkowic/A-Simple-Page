@@ -1,0 +1,159 @@
+/* MAIN PAGE */
+.mainHeader {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0,100% 0,100% 80vh,0 100%);
+}
+.backgroundImage-header{
+    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,rgba(118, 242, 255,.8),rgba(40,180,133,.7)),
+    url("https://d1bvpoagx8hqbg.cloudfront.net/originals/nicea-jest-naprawde-swietna-9b847f03bf4178cbf162013b044cda4d.jpg");
+}
+.bg-gray {
+    background-color: #515A6B;
+}
+.navbar-menu-font-color {
+    font-size: 20px;
+    color: #FFF;
+}
+.text-color-white {
+    font-size: clamp(2rem, 1rem + 5vw, 5rem);
+    color: #FFF;
+    text-shadow: 0 1px 5px #333333;
+}
+.text-color-white-small {
+    font-size: clamp(1rem, .5rem + 5vw, 3rem);
+    color: #FFF;
+    text-shadow: 0 1px 5px #333333;
+    margin-bottom: 25px;
+}
+.header-box {
+    height: 200px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.buttons-under-the-header {
+    display: flex;
+    justify-content: center;
+}
+.btn-margin {
+    margin: 0 100px;
+}
+.tables-with-info-about-the-shop {
+    margin: 0 20px;
+    max-width: 550px;
+
+}
+.text-about-the-shop {
+    font-size: 14px;
+}
+.product-image {
+    width: 400px;
+    height: auto;
+}
+.mainFooter {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backgroundImage-footer{
+    background-image: linear-gradient(to right bottom,rgba(145, 107, 66,.8),rgba(255, 255, 212, .7)),
+    url("http://www.falstaff.com/fileadmin/Channels/Channels/Gourmet/Kaffee/Wachmacher_Kaffee_1907/1-kaffee-c-GettyImages2640.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.footer-box {
+    height: 200px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-heading-text-and-backgroundColor {
+    font-size: clamp(2rem, .5rem + 5vw, 3.5rem);
+    color: #FFF;
+    background-color: #33333388;
+    padding: 1rem;
+}
+.button-for-google-store {
+    max-width: 230px;
+}
+.button-for-app-store {
+    max-width: 200px;
+}
+.container-for-image {
+    position: relative;
+    width: 100%;
+}
+.image-hover-price {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #66330099;
+}
+.container-for-image:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+.price-tag {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.buttons-hover-onclick {
+    padding: 0 20px;
+    color: #FFF;
+    border: none;
+    border-radius: 15px;
+    width: auto;
+    height: 40px;
+    background-color: #515A6B;
+    transition: .3s ease-in-out;
+}
+.buttons-hover-onclick:hover {
+    background-color: #515A6BAA;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .buttons-under-the-header {
+        display: block;
+        margin-top: 10px;
+    }
+    .buttons-margin {
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .col-margin {
+        margin: 10px auto;
+    }
+}
