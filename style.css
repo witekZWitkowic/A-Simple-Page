@@ -1,4 +1,8 @@
 /* MAIN PAGE */
+body {
+    background-color: #FFF;
+    transition: .5s ease-in-out;
+}
 .mainHeader {
     height: 95vh;
     display: flex;
@@ -139,6 +143,71 @@
 .buttons-hover-onclick:hover {
     background-color: #515A6BAA;
 }
+.night {
+    background-color: #333333;
+    transition: .5s ease;
+}
+.white {
+    background-color: #FFF;
+    transition: .5s ease-in-out;
+}
+#night {
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    opacity: 0.7;
+}
+.scrolled-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: rgba(68, 68, 68, 0.32);
+    list-style: none;
+    font-size: 1.5rem;
+    transform: translate(-100%);
+    overflow: hidden;
+    transition: 1s ease;
+    box-shadow: 1px 1px 20px #33333399;
+    z-index: 10;
+}
+.links {
+    transform: translate(0);
+}
+li {
+    font-weight: bold;
+    margin: 20px 0 0 30px;
+    padding-top: 50px;
+}
+
+#slider {
+    cursor: pointer;
+    width: 40px;
+}
+.blurred {
+    filter: blur(2px);
+    transition: .5s ease;
+}
+#wholePage {
+    transition: .5s ease;
+}
+#closeSign {
+    margin-top: 5px;
+    float: right;
+    cursor: pointer;
+}
+a {
+    transition: .5s ease-in-out;
+}
+a:hover {
+    transition: .5s ease-in-out;
+    color: rgba(68, 68, 68, 0.87) !important;
+}
+a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 /* MEDIA QUERIES */
 
@@ -155,5 +224,12 @@
 @media only screen and (max-width: 767px) {
     .col-margin {
         margin: 10px auto;
+    }
+    .scrolled-menu {
+        width: 100%;
+    }
+    #closeSign {
+        margin-left: -30px;
+        float: left;
     }
 }
